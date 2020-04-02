@@ -70,7 +70,7 @@ public class PlayerLogic : MonoBehaviour
             if (CanShot)
             {
                 GameObject.FindObjectOfType<BallLogic>().ballRigidbody.AddForce(
-                    new Vector3(-gameObject.transform.position.x, 0, -gameObject.transform.position.z) * distance * 3);
+                    new Vector3(-gameObject.transform.position.x, 0, -gameObject.transform.position.z) * distance * 5);
                 gameObject.transform.position = StartPosition;
                 Direction.rotation = Quaternion.identity;
                 CanShot = false;
